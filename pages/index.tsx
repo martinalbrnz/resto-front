@@ -1,5 +1,5 @@
 import Head from 'next/head';
-import { Layout } from '../components';
+import { Layout, Tables } from '../components';
 import styles from '../styles/Home.module.scss';
 
 export default function Home() {
@@ -12,7 +12,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Layout>
-        <div className={styles.container}>Hello world!</div>
+        <Tables />
       </Layout>
     </>
   );

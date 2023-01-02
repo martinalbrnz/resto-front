@@ -1,0 +1,31 @@
+.tablesContainer {
+  position: relative;
+  background-color: #a1a1a1;
+  width: 95vw;
+  height: 80vh;
+  margin: 0 auto;
+
+  .table {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    width: 100px;
+    height: 100px;
+    background-color: lavender;
+    user-select: none;
+
+    &:active {
+      border: 2px solid slateblue;
+    }
+
+    &.round {
+      border-radius: 50%;
+    }
+
+    .hidden {
+      display: none;
+    }
+  }
+}
