@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { MdRestaurantMenu } from "react-icons/md";
-import styles from './header.module.scss';
+import { Routes } from "../../../constants/routes";
+import styles from "./header.module.scss";
 
 const Header = () => {
   return (
@@ -11,23 +12,23 @@ const Header = () => {
       </a>
       <ul className={styles.navbar}>
         <li className={styles.opc}>
-          <Link href="/" className={styles.link}>
-            Caja
+          <Link href={Routes.Caja} className={styles.link}>
+            <span>Caja</span>
           </Link>
         </li>
         <li className={styles.opc}>
-          <Link href="/" className={styles.link}>
-            Almacen
+          <Link href={Routes.Almacen} className={styles.link}>
+            <span>Almacen</span>
           </Link>
         </li>
         <li className={styles.opc}>
-          <Link href="/" className={styles.link}>
-            Comanda
+          <Link href={Routes.Comanda} className={styles.link}>
+            <span>Comanda</span>
           </Link>
         </li>
         <li className={styles.opc}>
-          <Link href="/" className={styles.link}>
-            Personal
+          <Link href={Routes.Personal} className={styles.link}>
+            <span>Personal</span>
           </Link>
         </li>
       </ul>
