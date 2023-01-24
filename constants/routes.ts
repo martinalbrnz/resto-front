@@ -4,9 +4,11 @@ export enum Routes {
 	Comanda = 'comandas',
 	Home = '',
 	Personal = 'personal',
+	Salon = 'salon',
 
 	AlmacenApi = 'store',
 	CajaApi = '',
 	ComandaApi = 'commands',
 	PersonalApi = 'staff',
+	SalonApi = 'lounge',
 }
